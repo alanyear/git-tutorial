@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @Api(tags="API接口")
+
 @RestController
 @CrossOrigin(origins = "*",maxAge = 3600)
 public class DataController {
@@ -44,3 +45,4 @@ public class DataController {
         dataService.delete(id);
     }
 }
+
